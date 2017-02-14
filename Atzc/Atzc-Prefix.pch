@@ -1,0 +1,73 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+
+//用户信息
+#define kMY_USER_ID @"myUserId"
+#define kMY_USER_PASSWORD @"myUserPassword"
+#define kMY_USER_NICKNAME @"myUserNickname"
+#define kMY_USER_ACCOUNT @"myUserAccount"
+#define kMY_USER_Head @"myUserHead"
+#define kMY_USER_LoginName @"myUserLoginName"
+//xmpp
+#define kXMPPHost @"www.atzc.net"
+#define kXMPPPort 10000
+#define kXMPPmyJID @"myXmppJid"
+#define kXMPPmyPassword @"myXmppPassword"
+#define kXMPPNewMsgNotifaction @"xmppNewMsgNotifaction"
+
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+    #import <QuartzCore/QuartzCore.h>
+    #import "WXHLGlobalUICommon.h"
+    #import "CONSTS.h"
+    #import "UIViewExt.h"
+    #import "AtzcUserHeaderView.h"     //在诸城头像
+    #import "UserModel.h"
+    #import "MessageUserUnionModel.h"
+    #import "AtzcNetWorkServices.h"
+    #import "Photo.h"                  //图片文字序列化
+    #import "ASIFormDataRequest.h"     //网络请求
+    #import "SBJsonParser.h"           //json处理
+    #import "MessageModel.h"
+    #import "AtzcXMPPManager.h"        //在诸城聊天
+    #import "DejalActivityView.h"      //指示层
+    #import "UIImageView+WebCache.h"   //图片网络缓存
+    #import "UIWindow+YzdHUD.h"        //提示层
+    #import "AtzcModels.h"             //实体类
+    #import "UIFactory.h"
+#endif
+
+//FMDB 数据库
+#define FMDBQuickCheck(SomeBool) { if (!(SomeBool)) { NSLog(@"Failure on line %d", __LINE__); abort(); } }
+
+#define DATABASE_PATH [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0]stringByAppendingString:@"/atzcDb.db"]
+
+
+//API路径
+#define API_BASE_URL(_URL_) [NSURL URLWithString:[@"http://3g.atzc.net/" stringByAppendingString:_URL_]]
+
+//获取设备的物理高度
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+
+//获取设备的物理宽度
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+
+//网站名称
+#define MySiteName @"在诸城"

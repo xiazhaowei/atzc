@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="_loginButton" destination="doj-4P-WzF" id="OmL-tA-yVj"/>
+                <outlet property="_registerButton" destination="Fqk-2L-ACU" id="8CR-1M-W1i"/>
+                <outlet property="_userHead" destination="1fd-e1-PFb" id="tIt-go-5WU"/>
+                <outlet property="_userLoginName" destination="E3n-Z7-3j1" id="SgC-jl-meC"/>
+                <outlet property="_userPassword" destination="vW6-rZ-FLJ" id="1yS-pd-bUu"/>
+                <outlet property="userLoginName" destination="E3n-Z7-3j1" id="9iv-wT-sH2"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="default_userheader.png" translatesAutoresizingMaskIntoConstraints="NO" id="1fd-e1-PFb">
+                    <rect key="frame" x="95" y="43" width="121" height="105"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="operationbox_text.png" translatesAutoresizingMaskIntoConstraints="NO" id="N68-cM-It7">
+                    <rect key="frame" x="35" y="235" width="254" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <rect key="contentStretch" x="0.29999999999999999" y="0.050000000000000003" width="0.45000000000000001" height="0.80000000000000004"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SignUpPasswordIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="5Hp-7p-07a">
+                    <rect key="frame" x="48" y="246" width="23" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请填写密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vW6-rZ-FLJ">
+                    <rect key="frame" x="84" y="246" width="192" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doj-4P-WzF">
+                    <rect key="frame" x="37" y="291" width="252" height="54"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="登录">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="startLogin:" destination="-1" eventType="touchUpInside" id="vNw-Qw-k7U"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqk-2L-ACU">
+                    <rect key="frame" x="37" y="345" width="252" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="注册">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="registerAccount:" destination="-1" eventType="touchUpInside" id="g3g-5T-Eej"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="operationbox_text.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jdf-3G-eQU">
+                    <rect key="frame" x="35" y="178" width="254" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <rect key="contentStretch" x="0.29999999999999999" y="0.050000000000000003" width="0.45000000000000001" height="0.80000000000000004"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SignUpPasswordIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="kUj-HD-byn">
+                    <rect key="frame" x="48" y="189" width="23" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="邮箱/手机号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E3n-Z7-3j1">
+                    <rect key="frame" x="84" y="185" width="180" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="SignUpPasswordIcon.png" width="19" height="19"/>
+        <image name="default_userheader.png" width="135" height="135"/>
+        <image name="operationbox_text.png" width="16" height="42"/>
+    </resources>
+</document>
